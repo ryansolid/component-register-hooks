@@ -1,0 +1,24 @@
+{
+  "name": "component-register-hooks",
+  "description": "React Hooks API with Web Components",
+  "version": "0.0.1",
+  "author": "Ryan Carniato",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryansolid/component-register-hooks"
+  },
+  "main": "lib/component-register-hooks.js",
+  "module": "src/index.js",
+  "scripts": {
+    "prepublishOnly": "rollup -c"
+  },
+  "dependencies": {
+    "augmentor": "~0.2.6",
+    "component-register": "0.6.x"
+  },
+  "devDependencies": {
+    "rollup": "^1.0.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  }
+}
