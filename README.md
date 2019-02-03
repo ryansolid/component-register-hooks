@@ -13,10 +13,10 @@ import { register, compose } from 'component-register';
 import { withHooks, useState, useEffect } from 'component-register-hooks';
 import { render, html } from 'lit-html';
 
-const LitCounter = ({ interval }) => {
+const LitCounter = () => {
   const [count, setCount] = useState(0);
   useEffect(() => {
-    const t = setInterval(() => setCount(c => c + interval), 500);
+    const t = setInterval(() => setCount(c => c + 1), 1000);
     return () => clearInterval(t);
   }, []);
   return html`<div>Count: ${count}</div>`;
