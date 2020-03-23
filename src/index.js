@@ -16,7 +16,8 @@ export function withHooks(render = naiveRenderer) {
               props[name] = value;
             })
           }, []);
-          render(Component(props, options), element.renderRoot());
+          const comp = Component(props, options);
+          render(comp, element.renderRoot);
           return element;
         })
       element.addReleaseCallback(() => effected.reset());
